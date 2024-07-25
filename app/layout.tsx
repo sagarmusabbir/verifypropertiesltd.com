@@ -15,7 +15,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://verifypropertyuk.netlify.app/",
   },
-
+  keywords: [
+    "verify property",
+    "verify properties",
+    "verify property uk",
+    "property management uk",
+    "Affordable Property Management",
+  ],
   description:
     "Affordable Property Management Solutions: Revolutionizing the way you manage properties with cost-effective, efficient service. With verify properties property management no longer needs to be costly",
 
