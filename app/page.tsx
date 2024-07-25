@@ -1,14 +1,18 @@
+import { EmailSignUpCardNewsletterSection } from "@/components/ui/register";
 import { FeatureSection } from "@/components/ui/feature";
-import { MainHero } from "@/components/ui/hero";
-import { ServiceSection } from "@/components/ui/service";
+import { Hero } from "@/components/ui/hero";
 
 import Image from "next/image";
+import { FeatureListCardsSection } from "@/components/ui/services";
 
 export default function Home() {
   return (
     <main>
-      <MainHero />
+      <Hero />
       <FeatureSection />
+      <FeatureListCardsSection />
+      <EmailSignUpCardNewsletterSection />
+
       {/* <ServiceSection /> */}
     </main>
   );

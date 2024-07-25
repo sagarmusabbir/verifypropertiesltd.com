@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
+<svg
+   
+   height="32"
+   viewBox="0 0 14 14"
+   version="1.1"
+   id="svg6190"
+   fill="none"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1" />
+  <g
+     id="SVGRepo_iconCarrier"
+     transform="translate(-2,-2)">
+    <metadata
+       id="metadata6196">
+      <rdf:rdf>
+        <cc:work>
+          <dc:format>image/svg+xml</dc:format>
+          <dc:type
+             rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+          <dc:title />
+          <dc:date>2016</dc:date>
+          <dc:creator>
+            <cc:agent>
+              <dc:title>Timothée Giet</dc:title>
+            </cc:agent>
+          </dc:creator>
+          <cc:license
+             rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+        </cc:work>
+        <cc:license
+           rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+          <cc:permits
+             rdf:resource="http://creativecommons.org/ns#Reproduction" />
+          <cc:permits
+             rdf:resource="http://creativecommons.org/ns#Distribution" />
+          <cc:requires
+             rdf:resource="http://creativecommons.org/ns#Notice" />
+          <cc:requires
+             rdf:resource="http://creativecommons.org/ns#Attribution" />
+          <cc:permits
+             rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+          <cc:requires
+             rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+        </cc:license>
+      </rdf:rdf>
+    </metadata>
+    <defs
+       id="defs6194" />
+    <g
+       transform="translate(6.025,-1036.1)"
+       id="layer1">
+      <path
+         id="path4137"
+         d="m -4.025,1039.1 h 2 l 10,8 v 2 h -2 l -10,-8 z"
+         style="fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         id="path4139"
+         d="m 7.975,1049.1 v 2 h 2 v -2 z"
+         style="fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 8.975,1038.1 h 1 v 1 l -13,13 h -1 v -1 z"
+         id="path4461" />
+    </g>
+  </g>
+</svg>
