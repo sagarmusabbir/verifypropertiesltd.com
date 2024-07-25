@@ -14,6 +14,7 @@ import Link from "next/link";
 import { SiGithub, SiUpwork } from "react-icons/si";
 
 import {
+  PiArrowDown,
   PiArrowDownFill,
   PiArrowUpRightBold,
   PiArrowUpRightFill,
@@ -37,18 +38,22 @@ export function HeaderNavigation() {
       </NavbarBrand>
       <div className="flex md:order-2 gap-2">
         <DarkThemeToggle iconLight={Moon} iconDark={Sun} />
-        <Link href="#" className="hidden md:block">
+        <Link
+          href="https://thirdbracket.co.uk"
+          target="_blank"
+          className="hidden md:block"
+        >
           <Button size="sm" color="light">
-            Web Partner
+            Digital
             {/* <SiGithub className="ml-2 self-center w-4 h-4" /> */}
             <Tb className="fill-gray-700 dark:fill-gray-300 ml-2 self-center w-4 h-4" />
             <PiArrowUpRightFill className="ml-1 w-2 h-2 " />
           </Button>
         </Link>
-        <Link href="#" className="hidden md:block">
+        <Link href="/#form" className="hidden md:block">
           <Button color="dark" size="sm">
             Get Started
-            <PiArrowDownFill className="ml-2 self-center w-4 h-4" />
+            <PiArrowDown className="ml-2 self-center w-4 h-4" />
           </Button>
         </Link>
 
@@ -58,17 +63,17 @@ export function HeaderNavigation() {
         <NavLink />
 
         <div className="md:hidden my-4 ">
-          <Link href="#">
+          <Link href="https://thirdbracket.co.uk" target="_blank">
             <Button size="sm" color="light" className="w-full mb-2">
-              Web Partner
+              Digital
               <Tb className="self-center fill-gray-700 dark:fill-gray-300 w-4 h-4 ml-2" />
               <PiArrowUpRightFill className="self-center w-2 h-2" />
             </Button>
           </Link>
-          <Link href="#">
+          <Link href="/#form">
             <Button color="dark" size="sm" className="w-full">
               Get Started
-              <PiArrowDownFill className="self-center w-2 h-2" />
+              <PiArrowDown className="self-center ml-2 w-4 h-4" />
             </Button>
           </Link>
         </div>

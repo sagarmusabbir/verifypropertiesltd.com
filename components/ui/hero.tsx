@@ -120,27 +120,34 @@ export function Hero() {
           <Image src={lr} alt="literaturereview" className="dark:invert" />
         </a>
         <a
+          href="https://thirdbracket.co.uk"
+          target="_blank"
+          className="flex justify-center"
+        >
+          <Image src={hp} alt="thirdbracket.co.uk" className="dark:invert" />
+        </a>
+        <a
           href="https://productsofbangladesh.com"
           target="_blank"
           className="flex justify-center"
         >
-          <Image src={hp} alt="productsofbasngladesh" className="dark:invert" />
+          <Image
+            src={logodark}
+            alt="products-of-bangladesh"
+            className="dark:hidden"
+          />
+          <Image
+            src={logowhite}
+            alt="products-of-bangladesh"
+            className="hidden dark:block"
+          />
         </a>
         <a
           href="https://nomadgang.com"
           target="_blank"
           className="flex justify-center"
         >
-          <Image
-            src={logodark}
-            alt="habiganjproperties"
-            className="dark:hidden"
-          />
-          <Image
-            src={logowhite}
-            alt="habiganjproperties"
-            className="hidden dark:block"
-          />
+          <Image src={nmg} alt="nomadgang" className="dark:invert" />
         </a>
         <a
           href="https://musabbirsagar.com"
@@ -148,13 +155,6 @@ export function Hero() {
           className="flex justify-center"
         >
           <Image src={ms} alt="musabbirsagar" className="dark:invert" />
-        </a>
-        <a
-          href="https://musabbirsagar.com"
-          target="_blank"
-          className="flex justify-center"
-        >
-          <Image src={nmg} alt="nomadgang" className="dark:invert" />
         </a>
       </div>
     </section>

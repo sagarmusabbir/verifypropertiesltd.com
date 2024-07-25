@@ -7,11 +7,11 @@ export const links: LinkItem[] = [
   {
     id: 1,
     name: "About",
-    to: "/#",
+    to: "/#about",
     icon: PiArrowDown,
   },
-  { id: 2, name: "Features", to: "/#", icon: PiArrowDown },
-  { id: 3, name: "Services", to: "/#", icon: PiArrowDown },
+  { id: 2, name: "Features", to: "/#feature", icon: PiArrowDown },
+  { id: 3, name: "Services", to: "/#service", icon: PiArrowDown },
 ];
 
 export const siteData = {
