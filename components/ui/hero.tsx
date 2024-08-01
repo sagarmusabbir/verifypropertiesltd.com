@@ -8,6 +8,8 @@ import nmg from "@/public/nmg.svg";
 import hp from "@/public/hp.svg";
 import logowhite from "@/public/logowhite.svg";
 import logodark from "@/public/logoblack.svg";
+import hpwhite from "@/public/hp-white.svg";
+import hpblack from "@/public/hp-black.svg";
 
 import {
   PiArrowBendDoubleUpRightFill,
@@ -124,7 +126,16 @@ export function Hero() {
           target="_blank"
           className="flex justify-center"
         >
-          <Image src={hp} alt="thirdbracket.co.uk" />
+          <Image
+            src={hpblack}
+            alt="thirdbracket.co.uk"
+            className="dark:hidden"
+          />
+          <Image
+            src={hpwhite}
+            alt="thirdbracket.co.uk"
+            className="hidden dark:block"
+          />
         </a>
         <a
           href="https://productsofbangladesh.com"
@@ -147,14 +158,14 @@ export function Hero() {
           target="_blank"
           className="flex justify-center"
         >
-          <Image src={nmg} alt="nomadgang" className="dark:invert" />
+          <Image src={nmg} alt="nomadgang" />
         </a>
         <a
           href="https://musabbirsagar.com"
           target="_blank"
           className="flex justify-center"
         >
-          <Image src={ms} alt="musabbirsagar" className="dark:invert" />
+          <Image src={ms} alt="musabbirsagar" />
         </a>
       </div>
     </section>
