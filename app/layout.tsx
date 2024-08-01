@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://og.tailgraph.com/og?fontFamily=Inter&title=Property%20Management%20No%20Longer%20Needs%20To%20Be%20Costly%20%7C%20Verify%20Properties%20Limited&titleTailwind=text-gray-800%20font-bold%20text-2xl&titleFontFamily=Inter&text=Affordable%20Property%20Management%20Solutions&textTailwind=text-gray-700%20text-2xl&textFontFamily=Inter&logoTailwind=h-8&bgTailwind=bg-white&footer=verifypropertiesltd.com&footerTailwind=text-teal-600&t=1721843896804&refresh=1",
+        url: "https://og.tailgraph.com/og?fontFamily=Inter&title=Affordable%20Property%20Management%20-%20Verify%20Properties%20Limited&titleTailwind=text-gray-800%20font-bold%20text-6xl&titleFontFamily=Inter&text=With%20verify%20properties%2C%20property%20management%20no%20longer%20needs%20to%20be%20costly&textTailwind=text-gray-700%20text-2xl%20mt-4&textFontFamily=Inter&logoUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fsagarmusabbir%2Fverifypropertiesltd.com%2Fmain%2Fpublic%2Flogo3.svg&logoTailwind=mx-auto%20h-16&bgUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fsagarmusabbir%2Fverifypropertiesltd.com%2Fmain%2Fpublic%2Fcover.svg&bgTailwind=bg-white&footer=verifypropertiesltd.com&footerTailwind=text-orange-500&t=1722023208501&refresh=1",
         alt: "verifypropertieslts.com og-image",
         width: 800,
         height: 600,
