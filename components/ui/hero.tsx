@@ -124,7 +124,7 @@ export function Hero() {
           target="_blank"
           className="flex justify-center"
         >
-          <Image src={hp} alt="thirdbracket.co.uk" className="dark:invert" />
+          <Image src={hp} alt="thirdbracket.co.uk" />
         </a>
         <a
           href="https://productsofbangladesh.com"
