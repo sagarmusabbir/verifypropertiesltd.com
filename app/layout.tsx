@@ -13,7 +13,7 @@ export const metadata: Metadata = {
       "Affordable Property Management Solutions | Verify Properties Limited",
   },
   alternates: {
-    canonical: "https://verifypropertyuk.netlify.app/",
+    canonical: "https://verifypropertiesltd.com/",
   },
   keywords: [
     "verify property",
