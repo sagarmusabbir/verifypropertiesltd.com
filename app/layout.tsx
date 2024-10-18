@@ -3,6 +3,30 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { HeaderNavigation } from "@/components/ui/header";
 import { FooterMain } from "@/components/ui/footer";
+import { WebPage, WithContext } from "schema-dts";
+
+export const jsonLd: WithContext<WebPage> = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: "Verify Properties Limited",
+
+  url: "https://www.verifypropertiesltd.com/",
+  description:
+    "Affordable Property Management Solutions: Revolutionizing the way you manage properties with cost-effective, efficient service. With verify properties property management no longer needs to be costly",
+
+  isPartOf: {
+    "@type": "WebSite",
+    name: "Verify Properties Limited",
+    url: "https://www.verifypropertiesltd.com/",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Verify Properties Limited",
+    url: "https://www.verifypropertiesltd.com/",
+    legalName: "Third Bracket Solution",
+    sameAs: ["https://verifypropertyltd.netlify.app/"],
+  },
+};
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -51,6 +75,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={inter.className}>
         <HeaderNavigation />
         {children}
