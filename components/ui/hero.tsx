@@ -114,7 +114,7 @@ export function Hero() {
             alt="thirdbracket"
             className="grayscale hover:grayscale-0 h-6 md:h-10"
           />
-          <h2 className="text-xs font-medium text-gray-500 hover:text-slate-500 uppercase">
+          <h2 className="hidden md:flex text-xs font-medium text-gray-500 hover:text-slate-500 uppercase">
             Third Bracket
           </h2>
         </a>
@@ -129,7 +129,7 @@ export function Hero() {
             alt="habiganjproperties"
             className="grayscale hover:grayscale-0 h-6 md:h-10"
           />
-          <h2 className="text-xs font-medium text-gray-500 hover:text-slate-500 uppercase">
+          <h2 className="hidden md:flex text-xs font-medium text-gray-500 hover:text-slate-500 uppercase">
             Habiganj Properties
           </h2>
         </a>
@@ -143,7 +143,7 @@ export function Hero() {
             alt="products-of-bangladesh"
             className="grayscale hover:grayscale-0 h-6 md:h-10"
           />
-          <h2 className="text-xs font-medium text-gray-500 hover:text-slate-500 uppercase">
+          <h2 className="hidden md:flex  text-xs font-medium text-gray-500 hover:text-slate-500 uppercase">
             Products of Bangladesh
           </h2>
         </a>
@@ -158,7 +158,7 @@ export function Hero() {
             alt="musabbirsagar"
             className="grayscale hover:grayscale-0 h-6 md:h-10"
           />
-          <h2 className="text-xs font-medium text-gray-500 hover:text-slate-500 uppercase">
+          <h2 className="hidden md:flex text-xs font-medium text-gray-500 hover:text-slate-500 uppercase">
             Musabbirs Terminal
           </h2>
         </a>
