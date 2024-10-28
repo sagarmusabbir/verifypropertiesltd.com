@@ -2,14 +2,11 @@
 import { Button } from "flowbite-react";
 import Image from "next/image";
 import tb from "@/public/tb.svg";
-import lr from "@/public/lr.svg";
+
 import ms from "@/public/ms.svg";
-import nmg from "@/public/nmg.svg";
-import hp from "@/public/hp.svg";
-import logowhite from "@/public/logowhite.svg";
-import logodark from "@/public/logoblack.svg";
-import hpwhite from "@/public/hp-white.svg";
-import hpblack from "@/public/hp-black.svg";
+
+import pob from "@/public/pob.svg";
+import hp from "@/public/hplogo.svg";
 
 import {
   PiArrowBendDoubleUpRightFill,
@@ -106,66 +103,64 @@ export function Hero() {
           />
         </div>
       </div>
-      <div className="mx-auto grid max-w-screen-xl grid-cols-2 gap-8 px-4 pb-8 text-gray-500 dark:text-gray-400 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 lg:pb-16">
+      <div className="mx-auto grid max-w-screen-xl grid-cols-2 gap-8 px-4 py-8 text-gray-500 dark:text-gray-400 sm:gap-12 md:grid-cols-3 lg:grid-cols-4 lg:py-16 bg-slate-100 dark:bg-gray-800 bg-[url('/hero.svg')] bg-cover bg-center bg-no-repeat bg-blend-screen dark:bg-blend-overlay">
         <a
           href="https://thirdbracket.co.uk"
           target="_blank"
-          className="flex justify-center"
-        >
-          <Image src={tb} alt="thirdbracket" className="dark:invert" />
-        </a>
-        <a
-          href="https://literaturereview.co.uk"
-          target="_blank"
-          className="flex justify-center"
-        >
-          <Image src={lr} alt="literaturereview" className="dark:invert" />
-        </a>
-        <a
-          href="https://thirdbracket.co.uk"
-          target="_blank"
-          className="flex justify-center"
+          className="flex flex-col items-center gap-1"
         >
           <Image
-            src={hpblack}
-            alt="thirdbracket.co.uk"
-            className="dark:hidden"
+            src={tb}
+            alt="thirdbracket"
+            className="grayscale hover:grayscale-0 h-6 md:h-10"
           />
+          <h2 className="text-xs font-medium text-gray-500 hover:text-slate-500 uppercase">
+            Third Bracket
+          </h2>
+        </a>
+
+        <a
+          href="https://www.facebook.com/habiganjproperties/"
+          target="_blank"
+          className="flex flex-col items-center gap-1"
+        >
           <Image
-            src={hpwhite}
-            alt="thirdbracket.co.uk"
-            className="hidden dark:block"
+            src={hp}
+            alt="habiganjproperties"
+            className="grayscale hover:grayscale-0 h-6 md:h-10"
           />
+          <h2 className="text-xs font-medium text-gray-500 hover:text-slate-500 uppercase">
+            Habiganj Properties
+          </h2>
         </a>
         <a
           href="https://productsofbangladesh.com"
           target="_blank"
-          className="flex justify-center"
+          className="flex flex-col items-center gap-1"
         >
           <Image
-            src={logodark}
+            src={pob}
             alt="products-of-bangladesh"
-            className="dark:hidden"
+            className="grayscale hover:grayscale-0 h-6 md:h-10"
           />
-          <Image
-            src={logowhite}
-            alt="products-of-bangladesh"
-            className="hidden dark:block"
-          />
+          <h2 className="text-xs font-medium text-gray-500 hover:text-slate-500 uppercase">
+            Products of Bangladesh
+          </h2>
         </a>
-        <a
-          href="https://nomadgang.com"
-          target="_blank"
-          className="flex justify-center"
-        >
-          <Image src={nmg} alt="nomadgang" />
-        </a>
+
         <a
           href="https://musabbirsagar.com"
           target="_blank"
-          className="flex justify-center"
+          className="flex flex-col items-center gap-1 "
         >
-          <Image src={ms} alt="musabbirsagar" />
+          <Image
+            src={ms}
+            alt="musabbirsagar"
+            className="grayscale hover:grayscale-0 h-6 md:h-10"
+          />
+          <h2 className="text-xs font-medium text-gray-500 hover:text-slate-500 uppercase">
+            Musabbirs Terminal
+          </h2>
         </a>
       </div>
     </section>
