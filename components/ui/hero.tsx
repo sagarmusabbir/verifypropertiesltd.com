@@ -112,9 +112,9 @@ export function Hero() {
           <Image
             src={tb}
             alt="thirdbracket"
-            className="grayscale hover:grayscale-0 h-6 md:h-10"
+            className="grayscale hover:grayscale-0 h-5"
           />
-          <h2 className="text-xs md:text-sm font-medium text-gray-500/70 hover:text-slate-500/50 uppercase">
+          <h2 className="text-xs lg:text-sm font-light text-gray-500/70 hover:text-slate-500/50 uppercase">
             Third Bracket
           </h2>
         </a>
@@ -127,9 +127,9 @@ export function Hero() {
           <Image
             src={hp}
             alt="habiganjproperties"
-            className="grayscale hover:grayscale-0 h-6 md:h-10"
+            className="grayscale hover:grayscale-0 h-5"
           />
-          <h2 className="text-xs md:text-sm font-medium text-gray-500/70 hover:text-slate-500/50 uppercase">
+          <h2 className="text-xs lg:text-sm font-light text-gray-500/70 hover:text-slate-500/50 uppercase">
             Habiganj Properties
           </h2>
         </a>
@@ -141,9 +141,9 @@ export function Hero() {
           <Image
             src={pob}
             alt="products-of-bangladesh"
-            className="grayscale hover:grayscale-0 h-6 md:h-10"
+            className="grayscale hover:grayscale-0 h-5"
           />
-          <h2 className="text-xs md:text-sm font-medium text-gray-500/70 hover:text-slate-500/50 uppercase">
+          <h2 className="text-xs lg:text-sm font-light text-gray-500/70 hover:text-slate-500/50 uppercase">
             Products of Bangladesh
           </h2>
         </a>
@@ -156,9 +156,9 @@ export function Hero() {
           <Image
             src={ms}
             alt="musabbirsagar"
-            className="grayscale hover:grayscale-0 h-6 md:h-10"
+            className="grayscale hover:grayscale-0 h-5 "
           />
-          <h2 className="text-xs md:text-sm font-medium text-gray-500/70 hover:text-slate-500/50 uppercase">
+          <h2 className="text-xs lg:text-sm font-light text-gray-500/70 hover:text-slate-500/50 uppercase">
             Musabbirs Terminal
           </h2>
         </a>
