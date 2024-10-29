@@ -103,7 +103,7 @@ export function Hero() {
           />
         </div>
       </div>
-      <div className="mx-auto grid max-w-screen-xl grid-cols-2 gap-8 px-4 py-8 text-gray-500 dark:text-gray-400 sm:gap-12 md:grid-cols-3 lg:grid-cols-4 lg:py-16 bg-slate-100 dark:bg-gray-800 bg-[url('/hero.svg')] bg-cover bg-center bg-no-repeat bg-blend-screen dark:bg-blend-overlay">
+      <div className="mx-auto grid max-w-screen-xl grid-cols-2 gap-8 px-4 py-8 text-gray-500 dark:text-gray-400 sm:gap-12 md:grid-cols-3 lg:grid-cols-4 md:py-16 bg-slate-100 dark:bg-gray-800 bg-[url('/hero.svg')] bg-cover bg-center bg-no-repeat bg-blend-screen dark:bg-blend-overlay">
         <a
           href="https://thirdbracket.co.uk"
           target="_blank"
@@ -114,7 +114,7 @@ export function Hero() {
             alt="thirdbracket"
             className="grayscale hover:grayscale-0 h-6 md:h-10"
           />
-          <h2 className="hidden md:flex text-xs font-medium text-gray-500 hover:text-slate-500 uppercase">
+          <h2 className="text-xs md:text-sm font-medium text-gray-500/70 hover:text-slate-500/50 uppercase">
             Third Bracket
           </h2>
         </a>
@@ -129,7 +129,7 @@ export function Hero() {
             alt="habiganjproperties"
             className="grayscale hover:grayscale-0 h-6 md:h-10"
           />
-          <h2 className="hidden md:flex text-xs font-medium text-gray-500 hover:text-slate-500 uppercase">
+          <h2 className="text-xs md:text-sm font-medium text-gray-500/70 hover:text-slate-500/50 uppercase">
             Habiganj Properties
           </h2>
         </a>
@@ -143,7 +143,7 @@ export function Hero() {
             alt="products-of-bangladesh"
             className="grayscale hover:grayscale-0 h-6 md:h-10"
           />
-          <h2 className="hidden md:flex  text-xs font-medium text-gray-500 hover:text-slate-500 uppercase">
+          <h2 className="text-xs md:text-sm font-medium text-gray-500/70 hover:text-slate-500/50 uppercase">
             Products of Bangladesh
           </h2>
         </a>
@@ -158,7 +158,7 @@ export function Hero() {
             alt="musabbirsagar"
             className="grayscale hover:grayscale-0 h-6 md:h-10"
           />
-          <h2 className="hidden md:flex text-xs font-medium text-gray-500 hover:text-slate-500 uppercase">
+          <h2 className="text-xs md:text-sm font-medium text-gray-500/70 hover:text-slate-500/50 uppercase">
             Musabbirs Terminal
           </h2>
         </a>

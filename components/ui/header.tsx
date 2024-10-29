@@ -50,7 +50,7 @@ export function HeaderNavigation() {
             {/* <SiGithub className="ml-2 self-center w-4 h-4" /> */}
             {/* <Tb className="fill-gray-700 dark:fill-gray-300 ml-2 self-center w-4 h-4" /> */}
             <svg
-              className="fill-gray-700 dark:fill-gray-300 ml-2 self-center w-4 h-4" // "h-6 sm:h-7 lg:h-9 mr-2 "
+              className="fill-gray-700 dark:fill-gray-300 ml-2 self-center w-3.5 h-3.5" // "h-6 sm:h-7 lg:h-9 mr-2 "
               viewBox="0 0 52.652 52.504"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +125,7 @@ export function HeaderNavigation() {
               Get Digital
               {/* <Tb className="self-center fill-gray-700 dark:fill-gray-300 w-4 h-4 ml-2" /> */}
               <svg
-                className="fill-gray-700 dark:fill-gray-300 ml-2 self-center w-4 h-4" // "h-6 sm:h-7 lg:h-9 mr-2 "
+                className="fill-gray-700 dark:fill-gray-300 ml-2 self-center w-3.5 h-3.5" // "h-6 sm:h-7 lg:h-9 mr-2 "
                 viewBox="0 0 52.652 52.504"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
