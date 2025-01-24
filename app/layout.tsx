@@ -4,6 +4,7 @@ import "./globals.css";
 import { HeaderNavigation } from "@/components/ui/header";
 import { FooterMain } from "@/components/ui/footer";
 import { WebPage, WithContext } from "schema-dts";
+import { MegaMenuHeader } from "@/components/mega-menu";
 
 export const jsonLd: WithContext<WebPage> = {
   "@context": "https://schema.org",
@@ -87,7 +88,8 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <HeaderNavigation />
+        {/* <HeaderNavigation /> */}
+        <MegaMenuHeader />
         {children}
         <FooterMain />
       </body>
