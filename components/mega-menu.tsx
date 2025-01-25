@@ -1,3 +1,4 @@
+"use client";
 import {
   DarkThemeToggle,
   Dropdown,
@@ -12,10 +13,14 @@ import {
   NavbarLink,
   TextInput,
 } from "flowbite-react";
+
 import Image from "next/image";
+import { useState } from "react";
 import { MdEmail, MdOutlineMail, MdPhone, MdPhoneIphone } from "react-icons/md";
 
 export function MegaMenuHeader() {
+  const [open, setOpen] = useState(false);
+  const [toggle, setToggle] = useState(false);
   return (
     <header>
       <Navbar className="dark:bg-gray-800">
@@ -68,7 +73,7 @@ export function MegaMenuHeader() {
                 Home
               </NavbarLink>
               <NavbarLink className="[&_span]:hover:text-primary-600 [&_span]:dark:hover:text-primary-500">
-                <MegaMenuDropdownToggle>
+                <MegaMenuDropdownToggle onToggle={() => setToggle(true)}>
                   Company
                   <svg
                     className="ml-1 h-4 w-4"
@@ -119,6 +124,7 @@ export function MegaMenuHeader() {
               </a>
               <a className=" dark:text-white text-sm">
                 <MegaMenuDropdownToggle
+                  onToggle={() => setToggle(true)}
                   theme={{
                     base: "inline-flex items-center rounded-lg p-2 text-sm text-gray-700 hover:text-gray-950 focus:outline-none focus:ring-0  dark:text-gray-400  md:hidden",
                   }}

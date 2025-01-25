@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { HeaderNavigation } from "@/components/ui/header";
+
 import { FooterMain } from "@/components/ui/footer";
 import { WebPage, WithContext } from "schema-dts";
-import { MegaMenuHeader } from "@/components/mega-menu";
+
+import { HeaderWithCenteredLogo } from "@/components/centered";
+
+import { HeaderWithSubNavbar } from "@/components/sub-navbar";
+import ProductCategoriesWithCards from "@/components/ui/cards";
+import { DoubleDashboardNavbarWithProjectDropdown } from "@/components/ui/project-dropdown";
 
 export const jsonLd: WithContext<WebPage> = {
   "@context": "https://schema.org",
@@ -89,7 +94,12 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         {/* <HeaderNavigation /> */}
-        <MegaMenuHeader />
+
+        {/* <HeaderWithCenteredLogo />
+
+        <HeaderWithSubNavbar /> */}
+        <DoubleDashboardNavbarWithProjectDropdown />
+
         {children}
         <FooterMain />
       </body>
