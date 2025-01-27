@@ -34,6 +34,7 @@ import {
 } from "react-icons/pi";
 import { IoMdArrowDropright } from "react-icons/io";
 import { FaSquareCaretRight } from "react-icons/fa6";
+import { HR, HRText } from "flowbite-react";
 
 export interface NavbarProps {
   children?: React.ReactNode;
@@ -353,8 +354,9 @@ const Navbar: FC<NavbarProps> = ({ children }) => {
                     <div className="space-y-2 ">
                       {/* Property Management */}
                       <div>
-                        <h3 className=" text-gray-950/70  py-2 ">
-                          Property Management
+                        <h3 className=" text-gray-950/70  flex items-center py-2">
+                          <span> Property Management</span>
+                          <hr className="ml-2 flex-grow border-[0.5px]  border-gray-950/10  m-0" />
                         </h3>
 
                         <div className="flex   flex-col px-1">
@@ -377,8 +379,9 @@ const Navbar: FC<NavbarProps> = ({ children }) => {
                       </div>
 
                       <div>
-                        <h3 className=" text-gray-950/70  py-2 ">
-                          Verification Services
+                        <h3 className=" text-gray-950/70  flex items-center py-2">
+                          <span> Verification Services </span>
+                          <hr className="ml-2 flex-grow border-[0.5px]  border-gray-950/10  m-0" />
                         </h3>
 
                         <div className="flex   flex-col  px-1">
@@ -401,8 +404,9 @@ const Navbar: FC<NavbarProps> = ({ children }) => {
                       </div>
 
                       <div>
-                        <h3 className=" text-gray-950/70  py-2 ">
-                          Valuation Services
+                        <h3 className=" text-gray-950/70  flex items-center py-2">
+                          <span> Valuation Services </span>
+                          <hr className="ml-2 flex-grow border-[0.5px]  border-gray-950/10  m-0" />
                         </h3>
 
                         <div className="flex   flex-col  px-1">
@@ -425,8 +429,9 @@ const Navbar: FC<NavbarProps> = ({ children }) => {
                       </div>
 
                       <div>
-                        <h3 className=" text-gray-950/70  py-2">
-                          Legal Services
+                        <h3 className=" text-gray-950/70  flex items-center py-2">
+                          <span>Legal Services </span>
+                          <hr className="ml-2 flex-grow border-[0.5px]  border-gray-950/10  m-0" />
                         </h3>
 
                         <div className="flex   flex-col  px-1">
@@ -448,7 +453,10 @@ const Navbar: FC<NavbarProps> = ({ children }) => {
                         </div>
                       </div>
                       <div>
-                        <h3 className=" text-gray-950/70  py-2 ">Marketing</h3>
+                        <h3 className=" text-gray-950/70  flex items-center py-2">
+                          <span>Marketing </span>
+                          <hr className="ml-2 flex-grow border-[0.5px]  border-gray-950/10  m-0" />
+                        </h3>
 
                         <div className="flex   flex-col    px-1">
                           <Navlink href="#" isDropdownItem>
@@ -472,11 +480,12 @@ const Navbar: FC<NavbarProps> = ({ children }) => {
                         </div>
                       </div>
                       <div>
-                        <h3 className=" text-gray-950/70  py-2">
-                          Investment Services
+                        <h3 className=" text-gray-950/70  flex items-center py-2">
+                          <span>Investment Services </span>
+                          <hr className="ml-2 flex-grow border-[0.5px]  border-gray-950/10  m-0" />
                         </h3>
 
-                        <div className="flex   flex-col  px-1">
+                        <div className="flex   flex-col px-1">
                           <Navlink href="#" isDropdownItem>
                             Market Analysis
                           </Navlink>
