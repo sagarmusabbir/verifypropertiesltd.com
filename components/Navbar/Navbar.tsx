@@ -6,19 +6,25 @@ import Navbrand from "./Navbrand";
 import DropdownMenu from "./DropndownMenu";
 import Image from "next/image";
 import {
+  MdArrowDropDown,
+  MdArrowRightAlt,
+  MdChevronRight,
   MdManageAccounts,
   MdNewLabel,
   MdNewReleases,
   MdOutline4kPlus,
   MdOutlineArrowUpward,
+  MdOutlineChevronRight,
   MdOutlineManageAccounts,
   MdOutlineSmartButton,
+  MdPlayArrow,
   MdPlusOne,
+  MdSquare,
 } from "react-icons/md";
 import { VscSymbolProperty } from "react-icons/vsc";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
-import { GrGrow } from "react-icons/gr";
+import { GrGrow, GrSquare } from "react-icons/gr";
 import { RiPriceTag2Line } from "react-icons/ri";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 import {
@@ -26,6 +32,8 @@ import {
   PiArrowCircleUpRightFill,
   PiArrowUpRightLight,
 } from "react-icons/pi";
+import { IoMdArrowDropright } from "react-icons/io";
+import { FaSquareCaretRight } from "react-icons/fa6";
 
 export interface NavbarProps {
   children?: React.ReactNode;
@@ -342,14 +350,14 @@ const Navbar: FC<NavbarProps> = ({ children }) => {
                     isOpen={openMobileCategory === "services"}
                     onToggle={() => toggleMobileCategory("services")}
                   >
-                    <div className="space-y-4 ">
+                    <div className="space-y-2 ">
                       {/* Property Management */}
                       <div>
-                        <Navlink href="#" isDropdownItem>
+                        <h3 className=" text-gray-950/70  py-2 ">
                           Property Management
-                        </Navlink>
+                        </h3>
 
-                        <div className="flex   flex-col px-4 border-l border-dotted">
+                        <div className="flex   flex-col px-1">
                           <Navlink href="#" isDropdownItem>
                             Tenant Screening
                           </Navlink>
@@ -369,11 +377,11 @@ const Navbar: FC<NavbarProps> = ({ children }) => {
                       </div>
 
                       <div>
-                        <Navlink href="#" isDropdownItem>
+                        <h3 className=" text-gray-950/70  py-2 ">
                           Verification Services
-                        </Navlink>
+                        </h3>
 
-                        <div className="flex   flex-col  px-4 border-l border-dotted">
+                        <div className="flex   flex-col  px-1">
                           <Navlink href="#" isDropdownItem>
                             Title Verification
                           </Navlink>
@@ -393,11 +401,11 @@ const Navbar: FC<NavbarProps> = ({ children }) => {
                       </div>
 
                       <div>
-                        <Navlink href="#" isDropdownItem>
+                        <h3 className=" text-gray-950/70  py-2 ">
                           Valuation Services
-                        </Navlink>
+                        </h3>
 
-                        <div className="flex   flex-col  px-4 border-l border-dotted">
+                        <div className="flex   flex-col  px-1">
                           <Navlink href="#" isDropdownItem>
                             Market Valuation
                           </Navlink>
@@ -417,11 +425,11 @@ const Navbar: FC<NavbarProps> = ({ children }) => {
                       </div>
 
                       <div>
-                        <Navlink href="#" isDropdownItem>
+                        <h3 className=" text-gray-950/70  py-2">
                           Legal Services
-                        </Navlink>
+                        </h3>
 
-                        <div className="flex   flex-col  px-4 border-l border-dotted">
+                        <div className="flex   flex-col  px-1">
                           <Navlink href="#" isDropdownItem>
                             Legal Contracts
                           </Navlink>
@@ -440,11 +448,9 @@ const Navbar: FC<NavbarProps> = ({ children }) => {
                         </div>
                       </div>
                       <div>
-                        <Navlink href="#" isDropdownItem>
-                          Marketing
-                        </Navlink>
+                        <h3 className=" text-gray-950/70  py-2 ">Marketing</h3>
 
-                        <div className="flex   flex-col    px-4 border-l border-dotted">
+                        <div className="flex   flex-col    px-1">
                           <Navlink href="#" isDropdownItem>
                             Property Listing
                           </Navlink>
@@ -466,11 +472,11 @@ const Navbar: FC<NavbarProps> = ({ children }) => {
                         </div>
                       </div>
                       <div>
-                        <Navlink href="#" isDropdownItem>
+                        <h3 className=" text-gray-950/70  py-2">
                           Investment Services
-                        </Navlink>
+                        </h3>
 
-                        <div className="flex   flex-col   px-4 border-l border-dotted">
+                        <div className="flex   flex-col  px-1">
                           <Navlink href="#" isDropdownItem>
                             Market Analysis
                           </Navlink>
@@ -500,14 +506,7 @@ const Navbar: FC<NavbarProps> = ({ children }) => {
                   >
                     <div className="space-y-2">
                       <div>
-                        {/* <Navlink href="#" isDropdownItem>
-                        PropTech Services
-                        <span>
-                          <MdOutlineSmartButton className="inline-flex items-center size-4 ml-4 text-gray-600 " />
-                        </span>
-                      </Navlink> */}
-
-                        <div className="flex   flex-col    ">
+                        <div className="flex   flex-col px-1   ">
                           <Navlink href="#" isDropdownItem>
                             Smart Home Integration
                           </Navlink>
