@@ -29,7 +29,7 @@ const DropdownMenu: FC<DropdownProps> = ({
       <div className="">
         <button
           onClick={toggleOpen}
-          className="flex items-center justify-between w-full py-2 transition-opacity ease-in-out duration-200   opacity-75 hover:opacity-100 text-gray-800 "
+          className="flex items-center justify-between w-full py-2 transition-opacity ease-in-out duration-200   opacity-75 hover:opacity-100 text-gray-950   "
         >
           <span>{title}</span>
           <svg

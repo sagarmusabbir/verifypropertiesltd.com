@@ -10,6 +10,7 @@ import {
   MdNewLabel,
   MdNewReleases,
   MdOutline4kPlus,
+  MdOutlineArrowUpward,
   MdOutlineManageAccounts,
   MdOutlineSmartButton,
   MdPlusOne,
@@ -19,6 +20,12 @@ import { GiTakeMyMoney } from "react-icons/gi";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
 import { GrGrow } from "react-icons/gr";
 import { RiPriceTag2Line } from "react-icons/ri";
+import { BsArrowUpRightCircle } from "react-icons/bs";
+import {
+  PiArrowCircleUpRight,
+  PiArrowCircleUpRightFill,
+  PiArrowUpRightLight,
+} from "react-icons/pi";
 
 export interface NavbarProps {
   children?: React.ReactNode;
@@ -326,201 +333,224 @@ const Navbar: FC<NavbarProps> = ({ children }) => {
           <div className="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_10%_200px,#ffffff,transparent)]">
             <div className="pt-14 ">
               <div className="px-4 pt-4 pb-3 space-y-1 overflow-y-auto max-h-[calc(100vh-4rem)]">
-                <Navlink href="#">About</Navlink>
+                <div className="pb-2">
+                  <Navlink href="#">About</Navlink>
 
-                <DropdownMenu
-                  title="Services"
-                  isMobile={true}
-                  isOpen={openMobileCategory === "services"}
-                  onToggle={() => toggleMobileCategory("services")}
-                >
-                  <div className="space-y-2">
-                    {/* Property Management */}
-                    <div>
-                      <Navlink href="#" isDropdownItem>
-                        Property Management
-                      </Navlink>
+                  <DropdownMenu
+                    title="Services"
+                    isMobile={true}
+                    isOpen={openMobileCategory === "services"}
+                    onToggle={() => toggleMobileCategory("services")}
+                  >
+                    <div className="space-y-4 ">
+                      {/* Property Management */}
+                      <div>
+                        <Navlink href="#" isDropdownItem>
+                          Property Management
+                        </Navlink>
 
-                      <div className="flex   flex-col border-l px-2 border-gray-100">
-                        <Navlink href="#" isDropdownItem>
-                          Tenant Screening
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Rent Collection
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Property Maintenance
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Property Inspections
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Financial Reporting
-                        </Navlink>
+                        <div className="flex   flex-col px-4 border-l border-dotted">
+                          <Navlink href="#" isDropdownItem>
+                            Tenant Screening
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Rent Collection
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Property Maintenance
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Property Inspections
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Financial Reporting
+                          </Navlink>
+                        </div>
                       </div>
-                    </div>
 
-                    <div>
-                      <Navlink href="#" isDropdownItem>
-                        Verification Services
-                      </Navlink>
+                      <div>
+                        <Navlink href="#" isDropdownItem>
+                          Verification Services
+                        </Navlink>
 
-                      <div className="flex   flex-col border-l px-2 border-gray-100 ">
-                        <Navlink href="#" isDropdownItem>
-                          Title Verification
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Document Verification
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Legal Compliance
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Property History Check
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Ownership Verification
-                        </Navlink>
+                        <div className="flex   flex-col  px-4 border-l border-dotted">
+                          <Navlink href="#" isDropdownItem>
+                            Title Verification
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Document Verification
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Legal Compliance
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Property History Check
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Ownership Verification
+                          </Navlink>
+                        </div>
                       </div>
-                    </div>
 
-                    <div>
-                      <Navlink href="#" isDropdownItem>
-                        Valuation Services
-                      </Navlink>
+                      <div>
+                        <Navlink href="#" isDropdownItem>
+                          Valuation Services
+                        </Navlink>
 
-                      <div className="flex   flex-col border-l px-2 border-gray-100 ">
-                        <Navlink href="#" isDropdownItem>
-                          Market Valuation
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Comparative Analysis
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Rental Assessment
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Investment Potential
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Depreciation Assessment
-                        </Navlink>
+                        <div className="flex   flex-col  px-4 border-l border-dotted">
+                          <Navlink href="#" isDropdownItem>
+                            Market Valuation
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Comparative Analysis
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Rental Assessment
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Investment Potential
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Depreciation Assessment
+                          </Navlink>
+                        </div>
                       </div>
-                    </div>
 
-                    <div>
-                      <Navlink href="#" isDropdownItem>
-                        Legal Services
-                      </Navlink>
+                      <div>
+                        <Navlink href="#" isDropdownItem>
+                          Legal Services
+                        </Navlink>
 
-                      <div className="flex   flex-col border-l px-2 border-gray-100 ">
-                        <Navlink href="#" isDropdownItem>
-                          Legal Contracts
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Dispute Resolution
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Property Registration
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          HMO Licensing
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Documentation
-                        </Navlink>
+                        <div className="flex   flex-col  px-4 border-l border-dotted">
+                          <Navlink href="#" isDropdownItem>
+                            Legal Contracts
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Dispute Resolution
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Property Registration
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            HMO Licensing
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Documentation
+                          </Navlink>
+                        </div>
                       </div>
-                    </div>
-                    <div>
-                      <Navlink href="#" isDropdownItem>
-                        Marketing
-                      </Navlink>
+                      <div>
+                        <Navlink href="#" isDropdownItem>
+                          Marketing
+                        </Navlink>
 
-                      <div className="flex   flex-col border-l px-2 border-gray-100 ">
-                        <Navlink href="#" isDropdownItem>
-                          Property Listing
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Online Advertisement
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Social Media Marketing
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Content Marketing
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          SEO
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Reputation Management
-                        </Navlink>
+                        <div className="flex   flex-col    px-4 border-l border-dotted">
+                          <Navlink href="#" isDropdownItem>
+                            Property Listing
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Online Advertisement
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Social Media Marketing
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Content Marketing
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            SEO
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Reputation Management
+                          </Navlink>
+                        </div>
                       </div>
-                    </div>
-                    <div>
-                      <Navlink href="#" isDropdownItem>
-                        Investment Services
-                      </Navlink>
+                      <div>
+                        <Navlink href="#" isDropdownItem>
+                          Investment Services
+                        </Navlink>
 
-                      <div className="flex   flex-col border-l px-2 border-gray-100 ">
-                        <Navlink href="#" isDropdownItem>
-                          Market Analysis
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Investment Strategy
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Portfolio Management
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          ROI Optimization
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Investment Consulting
-                        </Navlink>
+                        <div className="flex   flex-col   px-4 border-l border-dotted">
+                          <Navlink href="#" isDropdownItem>
+                            Market Analysis
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Investment Strategy
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Portfolio Management
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            ROI Optimization
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Investment Consulting
+                          </Navlink>
+                        </div>
                       </div>
-                    </div>
 
-                    {/* Add other categories similarly */}
-                  </div>
-                </DropdownMenu>
-                <DropdownMenu
-                  title="PropTech"
-                  isMobile={true}
-                  isOpen={openMobileCategory === "proptech"}
-                  onToggle={() => toggleMobileCategory("proptech")}
-                >
-                  <div className="space-y-2">
-                    <div>
-                      {/* <Navlink href="#" isDropdownItem>
+                      {/* Add other categories similarly */}
+                    </div>
+                  </DropdownMenu>
+                  <DropdownMenu
+                    title="PropTech"
+                    isMobile={true}
+                    isOpen={openMobileCategory === "proptech"}
+                    onToggle={() => toggleMobileCategory("proptech")}
+                  >
+                    <div className="space-y-2">
+                      <div>
+                        {/* <Navlink href="#" isDropdownItem>
                         PropTech Services
                         <span>
                           <MdOutlineSmartButton className="inline-flex items-center size-4 ml-4 text-gray-600 " />
                         </span>
                       </Navlink> */}
 
-                      <div className="flex   flex-col border-l px-2 border-gray-100 ">
-                        <Navlink href="#" isDropdownItem>
-                          Smart Home Integration
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Management Software
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          IoT Solutions
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Digital Payment Solutions
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Property Automation
-                        </Navlink>
+                        <div className="flex   flex-col    ">
+                          <Navlink href="#" isDropdownItem>
+                            Smart Home Integration
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Management Software
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            IoT Solutions
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Digital Payment Solutions
+                          </Navlink>
+                          <Navlink href="#" isDropdownItem>
+                            Property Automation
+                          </Navlink>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </DropdownMenu>
+                  </DropdownMenu>
 
-                <Navlink href="#">Contact</Navlink>
+                  <Navlink href="#">Contact</Navlink>
+                </div>
+
+                <div className="border-t border-gray-100/50 py-2">
+                  <Navlink className="flex  gap-1" href="#">
+                    Blog
+                    <span>
+                      <PiArrowCircleUpRight className="size-2.5" />
+                    </span>
+                  </Navlink>
+                  <Navlink className="flex  gap-1" href="#">
+                    Digital Partner
+                    <span>
+                      <PiArrowCircleUpRight className="size-2.5" />
+                    </span>
+                  </Navlink>
+                  <Navlink className="flex  gap-1" href="#">
+                    Contact Develeoper
+                    <span>
+                      <PiArrowCircleUpRight className="size-2.5" />
+                    </span>
+                  </Navlink>
+                </div>
               </div>
             </div>
           </div>
