@@ -20,8 +20,8 @@ import { HiPaperClip } from "react-icons/hi2";
 
 export function Hero() {
   return (
-    <section className="bg-white dark:bg-gray-900">
-      <div className="mx-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
+    <section className=" bg-white dark:bg-gray-900">
+      <div className="mx-auto grid container max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
         <div className="mr-auto  place-self-center lg:col-span-7">
           <h1 className="mb-6 max-w-2xl text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-5xl xl:text-6xl">
             Affordable&nbsp;

@@ -5,11 +5,7 @@ import "./globals.css";
 import { FooterMain } from "@/components/ui/footer";
 import { WebPage, WithContext } from "schema-dts";
 
-import { HeaderWithCenteredLogo } from "@/components/centered";
-
-import { HeaderWithSubNavbar } from "@/components/sub-navbar";
-import ProductCategoriesWithCards from "@/components/ui/cards";
-import { DoubleDashboardNavbarWithProjectDropdown } from "@/components/ui/project-dropdown";
+import { Navbar } from "@/components/Navbar";
 
 export const jsonLd: WithContext<WebPage> = {
   "@context": "https://schema.org",
@@ -98,9 +94,10 @@ export default function RootLayout({
         {/* <HeaderWithCenteredLogo />
 
         <HeaderWithSubNavbar /> */}
-        <DoubleDashboardNavbarWithProjectDropdown />
+        {/* <DoubleDashboardNavbarWithProjectDropdown /> */}
+        <Navbar />
 
-        {children}
+        <main className="mt-16">{children}</main>
         <FooterMain />
       </body>
     </html>

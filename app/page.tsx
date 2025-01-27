@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
+
       <FeatureSection />
       <FeatureListCardsSection />
       <EmailSignUpCardNewsletterSection />
