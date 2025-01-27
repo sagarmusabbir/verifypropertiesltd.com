@@ -14,10 +14,8 @@ const Navlink: FC<NavLinkProps> = ({
   isDropdownItem = false,
 }) => {
   const baseStyles =
-    "transition-opacity ease-in-out duration-300 delay-75  block py-2 hover:opacity-100 ";
-  const dropdownStyles = isDropdownItem
-    ? "opacity-70  text-gray-600 "
-    : "opacity-75  text-gray-950 ";
+    "transition-opacity ease-in-out duration-200  block py-2 hover:opacity-100 text-gray-800 ";
+  const dropdownStyles = isDropdownItem ? "opacity-75   " : "opacity-65   ";
 
   return (
     <a

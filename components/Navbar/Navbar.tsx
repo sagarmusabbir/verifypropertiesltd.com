@@ -327,6 +327,7 @@ const Navbar: FC<NavbarProps> = ({ children }) => {
             <div className="pt-14 ">
               <div className="px-4 pt-4 pb-3 space-y-1 overflow-y-auto max-h-[calc(100vh-4rem)]">
                 <Navlink href="#">About</Navlink>
+
                 <DropdownMenu
                   title="Services"
                   isMobile={true}
@@ -338,7 +339,6 @@ const Navbar: FC<NavbarProps> = ({ children }) => {
                     <div>
                       <Navlink href="#" isDropdownItem>
                         Property Management
-                        <MdOutlineManageAccounts className="inline-flex items-center size-4 ml-4 text-gray-600 " />
                       </Navlink>
 
                       <div className="flex   flex-col border-l px-2 border-gray-100">
@@ -362,37 +362,7 @@ const Navbar: FC<NavbarProps> = ({ children }) => {
 
                     <div>
                       <Navlink href="#" isDropdownItem>
-                        Investment Services
-                        <span>
-                          <GrGrow className="inline-flex items-center size-4 ml-4 text-gray-600 " />
-                        </span>
-                      </Navlink>
-
-                      <div className="flex   flex-col border-l px-2 border-gray-100 ">
-                        <Navlink href="#" isDropdownItem>
-                          Market Analysis
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Investment Strategy
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Portfolio Management
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          ROI Optimization
-                        </Navlink>
-                        <Navlink href="#" isDropdownItem>
-                          Investment Consulting
-                        </Navlink>
-                      </div>
-                    </div>
-
-                    <div>
-                      <Navlink href="#" isDropdownItem>
                         Verification Services
-                        <span>
-                          <AiOutlineSafetyCertificate className="inline-flex items-center size-4 ml-4 text-gray-600 " />
-                        </span>
                       </Navlink>
 
                       <div className="flex   flex-col border-l px-2 border-gray-100 ">
@@ -417,9 +387,6 @@ const Navbar: FC<NavbarProps> = ({ children }) => {
                     <div>
                       <Navlink href="#" isDropdownItem>
                         Valuation Services
-                        <span>
-                          <RiPriceTag2Line className="inline-flex items-center size-4 ml-4 text-gray-600 " />
-                        </span>
                       </Navlink>
 
                       <div className="flex   flex-col border-l px-2 border-gray-100 ">
@@ -443,11 +410,94 @@ const Navbar: FC<NavbarProps> = ({ children }) => {
 
                     <div>
                       <Navlink href="#" isDropdownItem>
+                        Legal Services
+                      </Navlink>
+
+                      <div className="flex   flex-col border-l px-2 border-gray-100 ">
+                        <Navlink href="#" isDropdownItem>
+                          Legal Contracts
+                        </Navlink>
+                        <Navlink href="#" isDropdownItem>
+                          Dispute Resolution
+                        </Navlink>
+                        <Navlink href="#" isDropdownItem>
+                          Property Registration
+                        </Navlink>
+                        <Navlink href="#" isDropdownItem>
+                          HMO Licensing
+                        </Navlink>
+                        <Navlink href="#" isDropdownItem>
+                          Documentation
+                        </Navlink>
+                      </div>
+                    </div>
+                    <div>
+                      <Navlink href="#" isDropdownItem>
+                        Marketing
+                      </Navlink>
+
+                      <div className="flex   flex-col border-l px-2 border-gray-100 ">
+                        <Navlink href="#" isDropdownItem>
+                          Property Listing
+                        </Navlink>
+                        <Navlink href="#" isDropdownItem>
+                          Online Advertisement
+                        </Navlink>
+                        <Navlink href="#" isDropdownItem>
+                          Social Media Marketing
+                        </Navlink>
+                        <Navlink href="#" isDropdownItem>
+                          Content Marketing
+                        </Navlink>
+                        <Navlink href="#" isDropdownItem>
+                          SEO
+                        </Navlink>
+                        <Navlink href="#" isDropdownItem>
+                          Reputation Management
+                        </Navlink>
+                      </div>
+                    </div>
+                    <div>
+                      <Navlink href="#" isDropdownItem>
+                        Investment Services
+                      </Navlink>
+
+                      <div className="flex   flex-col border-l px-2 border-gray-100 ">
+                        <Navlink href="#" isDropdownItem>
+                          Market Analysis
+                        </Navlink>
+                        <Navlink href="#" isDropdownItem>
+                          Investment Strategy
+                        </Navlink>
+                        <Navlink href="#" isDropdownItem>
+                          Portfolio Management
+                        </Navlink>
+                        <Navlink href="#" isDropdownItem>
+                          ROI Optimization
+                        </Navlink>
+                        <Navlink href="#" isDropdownItem>
+                          Investment Consulting
+                        </Navlink>
+                      </div>
+                    </div>
+
+                    {/* Add other categories similarly */}
+                  </div>
+                </DropdownMenu>
+                <DropdownMenu
+                  title="PropTech"
+                  isMobile={true}
+                  isOpen={openMobileCategory === "proptech"}
+                  onToggle={() => toggleMobileCategory("proptech")}
+                >
+                  <div className="space-y-2">
+                    <div>
+                      {/* <Navlink href="#" isDropdownItem>
                         PropTech Services
                         <span>
                           <MdOutlineSmartButton className="inline-flex items-center size-4 ml-4 text-gray-600 " />
                         </span>
-                      </Navlink>
+                      </Navlink> */}
 
                       <div className="flex   flex-col border-l px-2 border-gray-100 ">
                         <Navlink href="#" isDropdownItem>
@@ -467,11 +517,9 @@ const Navbar: FC<NavbarProps> = ({ children }) => {
                         </Navlink>
                       </div>
                     </div>
-
-                    {/* Add other categories similarly */}
                   </div>
                 </DropdownMenu>
-                <Navlink href="#">Services</Navlink>
+
                 <Navlink href="#">Contact</Navlink>
               </div>
             </div>
