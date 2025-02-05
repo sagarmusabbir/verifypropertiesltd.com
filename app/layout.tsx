@@ -6,6 +6,7 @@ import { WebPage, WithContext } from "schema-dts";
 
 import HeaderWithMegamenu from "@/components/ui/Megamenu";
 import FooterMain from "@/components/ui/footer";
+import { ThemeScript } from "@thirdbracket/bracketui";
 
 export const jsonLd: WithContext<WebPage> = {
   "@context": "https://schema.org",
@@ -87,6 +88,7 @@ export default function RootLayout({
           name="google-site-verification"
           content="h_Byp0nz7TBLUhrDB63hNVWzkhsAXJQU4mlvq5JttVI"
         />
+        <ThemeScript />
       </head>
       <body className={inter.className}>
         <HeaderWithMegamenu />
