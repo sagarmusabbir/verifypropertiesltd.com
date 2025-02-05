@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import { FooterMain } from "@/components/ui/footer";
 import { WebPage, WithContext } from "schema-dts";
 
-import { Navbar } from "@/components/Navbar";
+import HeaderWithMegamenu from "@/components/ui/Megamenu";
+import FooterMain from "@/components/ui/footer";
 
 export const jsonLd: WithContext<WebPage> = {
   "@context": "https://schema.org",
@@ -89,13 +89,7 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        {/* <HeaderNavigation /> */}
-
-        {/* <HeaderWithCenteredLogo />
-
-        <HeaderWithSubNavbar /> */}
-        {/* <DoubleDashboardNavbarWithProjectDropdown /> */}
-        <Navbar />
+        <HeaderWithMegamenu />
 
         <main className="mt-16">{children}</main>
         <FooterMain />

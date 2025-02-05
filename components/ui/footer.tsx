@@ -1,108 +1,66 @@
-"use client";
-import { Footer } from "flowbite-react";
+import Image from "next/image";
 import {
-  SiDribbble,
-  SiFacebook,
-  SiGithub,
-  SiLinkedin,
-  SiTwitter,
-  SiWhatsapp,
-} from "react-icons/si";
-import { Logo } from "../icons";
+  Footer,
+  FooterBrand,
+  FooterLink,
+  FooterSection,
+  FooterSocial,
+} from "@thirdbracket/bracketui";
+import { BsFacebook, BsLinkedin, BsMailbox, BsPhone } from "react-icons/bs";
+import { FaFacebook, FaLinkedin } from "react-icons/fa6";
+import { HiMail } from "react-icons/hi";
+import { SiFacebook } from "react-icons/si";
 
-export function FooterMain() {
+const FooterMain = () => {
   return (
-    <Footer className="rounded-none p-4 sm:p-6">
-      <div className="mx-auto w-full max-w-screen-xl">
-        <div className="md:flex md:justify-between">
-          <div className="mb-6 md:mb-0">
-            <Footer.Brand
-              alt="Verify Properties"
-              href="/"
-              name="Verify Properties"
-              src="/logo.svg"
-            />
-          </div>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-6 md:grid-cols-3">
-            <div>
-              <Footer.Title title="Resources" className="text-gray-800" />
-              <Footer.LinkGroup
-                className="text-base text-gray-600 dark:text-gray-400"
-                col
-              >
-                <Footer.Link href="https://flowbite.com">Flowbite</Footer.Link>
-                <Footer.Link href="https://tailwindcss.com/">
-                  Tailwind CSS
-                </Footer.Link>
-              </Footer.LinkGroup>
-            </div>
-            <div>
-              <Footer.Title title="Follow us" className="text-gray-800" />
-              <Footer.LinkGroup
-                className="text-base text-gray-600 dark:text-gray-400"
-                col
-              >
-                <Footer.Link href="https://github.com/themesberg/flowbite">
-                  Github
-                </Footer.Link>
-                <Footer.Link href="https://discord.gg/4eeurUVvTy">
-                  Discord
-                </Footer.Link>
-              </Footer.LinkGroup>
-            </div>
-            <div>
-              <Footer.Title title="Legal" className="text-gray-800" />
-              <Footer.LinkGroup
-                className="text-base text-gray-600 dark:text-gray-400"
-                col
-              >
-                <Footer.Link href="#">Privacy Policy</Footer.Link>
-                <Footer.Link href="#">Terms &amp; Conditions</Footer.Link>
-              </Footer.LinkGroup>
-            </div>
-          </div>
-        </div>
-        <Footer.Divider />
-        <div className="sm:flex sm:items-center sm:justify-between">
-          <Footer.Copyright
-            by="Verifyproperties™. All Rights Reserved."
-            href="/"
-            year={2023}
+    <Footer>
+      <FooterSection className="col-span-2">
+        <FooterBrand className="-ml-1">
+          <Image
+            src="logo32.svg"
+            width={32}
+            height={22}
+            alt=""
+            className="h-auto w-9 self-start"
           />
-          <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-            >
-              <SiWhatsapp className="h-5 w-5" fill="currentColor" />
-            </a>
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-            >
-              <SiFacebook className="h-5 w-5" fill="currentColor" />
-            </a>
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-            >
-              <SiTwitter className="h-5 w-5" fill="currentColor" />
-            </a>
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-            >
-              <SiLinkedin className="h-5 w-5" fill="currentColor" />
-            </a>
-            <a
-              href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-            >
-              <SiGithub className="h-5 w-5" fill="currentColor" />
-            </a>
-          </div>
+          You cost efficient property management solution.
+        </FooterBrand>
+        <div className="flex -ml-1.5 gap-x-4 justify-start items-center">
+          <FooterSocial
+            href="mailto:your@email.com"
+            icon={<BsMailbox size={20} />}
+            label="Email"
+          />
+          <FooterSocial
+            href="tel:+1234567890"
+            icon={<BsPhone size={18} />}
+            label="Phone"
+          />
         </div>
-      </div>
+      </FooterSection>
+
+      <FooterSection title="About">
+        <FooterLink href="/components">About Us</FooterLink>
+        <FooterLink href="/templates">Our Team</FooterLink>
+        <FooterLink href="/pricing">Pricing</FooterLink>
+      </FooterSection>
+
+      <FooterSection title="Resources">
+        <FooterLink href="/docs">Blog</FooterLink>
+        <FooterLink href="/guides">Contact</FooterLink>
+        <FooterLink href="/support">Support</FooterLink>
+      </FooterSection>
+
+      <FooterSection title="Legal">
+        <FooterLink href="/privacy">Privacy Policy</FooterLink>
+        <FooterLink href="/terms">Terms of Service</FooterLink>
+      </FooterSection>
+      <FooterSection title="More">
+        <FooterLink href="/components">Components</FooterLink>
+        <FooterLink href="/templates">Templates</FooterLink>
+        <FooterLink href="/pricing">Pricing</FooterLink>
+      </FooterSection>
     </Footer>
   );
-}
+};
+export default FooterMain;
