@@ -3,6 +3,7 @@ import colors, { amber, orange } from "tailwindcss/colors";
 const flowbite = require("flowbite-react/tailwind");
 
 const config: Config = {
+darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
