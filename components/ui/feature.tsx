@@ -9,12 +9,12 @@ export function FeatureSection() {
   return (
     <section id="feature" className="bg-white dark:bg-gray-900">
       <div className="mx-auto max-w-screen-xl px-4 py-8 text-center sm:py-16 lg:px-6">
-        <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+        <h2 className="mb-4 text-3xl lg:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
           The most trusted property verification platform
         </h2>
-        <p className="text-gray-500 dark:text-gray-400 sm:text-xl">
+        {/* <p className="text-gray-500 dark:text-gray-400 text-sm sm:text-base">
           Here are a few reasons why you should choose Us
-        </p>
+        </p> */}
         <div className="mt-8 space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:mt-12 lg:grid-cols-3">
           <div>
             <PiDatabase className="mx-auto mb-4 h-12 w-12 text-primary-600 dark:text-primary-500 fill-current" />

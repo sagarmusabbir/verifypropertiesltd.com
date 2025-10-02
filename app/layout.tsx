@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
+
 import "./globals.css";
 
 import { WebPage, WithContext } from "schema-dts";
@@ -90,7 +92,7 @@ export default function RootLayout({
         />
         <ThemeScript />
       </head>
-      <body className={inter.className}>
+      <body className={GeistSans.className}>
         <HeaderWithMegamenu />
 
         <main className="mt-16">{children}</main>
