@@ -28,7 +28,7 @@ export function Hero() {
           <p className="mb-4 md:mb-6 lg:mb-8 max-w-2xl text-gray-500 dark:text-gray-400 text-xs md:text-sm font-light  lg:text-base">
             Property Management No Longer Needs To Be Costly
           </p>
-          <h1 className="lg:mb-12 mb-8 md:mb-10 max-w-2xl  font-bold leading-none tracking-tight text-gray-900 dark:text-white text-4xl xl:text-5xl">
+          <h1 className="lg:mb-12 mb-8 md:mb-10 max-w-2xl  font-bold leading-none tracking-tight text-gray-900 dark:text-white text-4xl lg:text-5xl">
             Affordable&nbsp;
             <span className="bg-gradient-to-r from-orange-400 via-amber-500 to-orange-500 inline-block text-transparent bg-clip-text">
               Property&nbsp;

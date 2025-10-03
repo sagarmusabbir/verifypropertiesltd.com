@@ -5,18 +5,18 @@ import MyForm from "@/components/ui/form";
 
 export function EmailSignUpCardNewsletterSection() {
   return (
-    <section className="bg-white dark:bg-gray-900" id="form">
+    <section className="bg-gray-100 dark:bg-gray-900" id="form">
       <div
         id="form"
         className="mx-auto max-w-screen-xl px-4 py-8 lg:px-6 lg:py-16"
       >
-        <div className="items-center justify-between gap-16 rounded-lg bg-gray-900 p-6 text-white dark:bg-gray-800 md:p-12 lg:flex lg:gap-24">
+        <div className="items-center justify-between gap-16 rounded-lg bg-gray-200 p-6 text-white dark:bg-gray-800 md:p-12 lg:flex lg:gap-24">
           <div className="w-full">
             <h2 className="mb-4 text-3xl font-extrabold tracking-tight sm:text-4xl bg-gradient-to-r from-orange-400 via-amber-500 to-orange-500 inline-block text-transparent bg-clip-text">
               Register today for a free evaluation
             </h2>
             <p className="text-gray-400 sm:text-xl">
-              We will contact you thriugh email.
+              We will contact you through email.
             </p>
           </div>
           <div className="mt-6 w-full lg:mt-0">
