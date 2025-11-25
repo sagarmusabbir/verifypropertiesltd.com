@@ -194,12 +194,12 @@ const HeaderWithMegamenu = () => {
                     />
                   </div>
                   <div>
-                    <Navlink href="/case-studies" isDropdownItem>
-                      Third Bracket Solutions
+                    <a target="_blank" href="https://www.thirdbracket.co.uk">
+                      Third Bracket
                       <span className="inline-flex ml-1">
                         <MdArrowOutward />
                       </span>
-                    </Navlink>
+                    </a>
                     <Navlink href="/documentation" isDropdownItem>
                       Habiganj Properties
                       <span className="inline-flex ml-1">

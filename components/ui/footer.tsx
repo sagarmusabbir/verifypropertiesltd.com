@@ -151,8 +151,7 @@ const SiteFooter = () => {
           />
         </div>
       </FooterSection>
-
-      <FooterSection title="About Third Bracket">
+      <FooterSection title="About Developer">
         <FooterLink
           theme={{
             text: "text-gray-900 dark:text-gray-50",
@@ -169,9 +168,9 @@ const SiteFooter = () => {
             states:
               "focus-within:opacity-100 active:opacity-100  [@media(hover:hover)]:hover:opacity-100 [@media(hover:hover)]:dark:hover:opacity-100",
           }}
-          href="https://www.thirdbracket.co.uk/about#team"
+          href="https://www.thirdbracket.co.uk/work"
         >
-          Team
+          Work
         </FooterLink>
         <FooterLink
           theme={{
@@ -179,9 +178,9 @@ const SiteFooter = () => {
             states:
               "focus-within:opacity-100 active:opacity-100  [@media(hover:hover)]:hover:opacity-100 [@media(hover:hover)]:dark:hover:opacity-100",
           }}
-          href="https://www.thirdbracket.co.uk/about#roadmap"
+          href="https://www.thirdbracket.co.uk/services/web-development"
         >
-          Roadmap
+          Web Development
         </FooterLink>
         <FooterLink
           theme={{
@@ -189,9 +188,9 @@ const SiteFooter = () => {
             states:
               "focus-within:opacity-100 active:opacity-100  [@media(hover:hover)]:hover:opacity-100 [@media(hover:hover)]:dark:hover:opacity-100",
           }}
-          href="https://www.thirdbracket.co.uk/about#opensource"
+          href="https://www.thirdbracket.co.uk/services/digital-marketing"
         >
-          Open Source
+          SEO
         </FooterLink>
         <FooterLink
           isExternal
@@ -200,12 +199,11 @@ const SiteFooter = () => {
             states:
               "focus-within:opacity-100 active:opacity-100  [@media(hover:hover)]:hover:opacity-100 [@media(hover:hover)]:dark:hover:opacity-100",
           }}
-          href="https://www.thirdbracket.co.uk/about#culture"
+          href="https://www.thirdbracket.co.uk/services/ui-ux-design"
         >
-          Work culture
+          Branding
         </FooterLink>
       </FooterSection>
-
       <FooterSection title="Partners">
         <FooterLink
           theme={{
@@ -238,7 +236,6 @@ const SiteFooter = () => {
           Habiganj Properties
         </FooterLink>
       </FooterSection>
-
       <FooterSection title="Legal">
         <FooterLink
           theme={{
@@ -293,23 +290,19 @@ const SiteFooter = () => {
           Pages
         </FooterLink>
       </FooterSection>
-      {/* <FooterSection title="Useful Links">
-        <FooterLink
-          href="https://www.business-directory-uk.co.uk/web-design.htm"
-          target="_blank"
-          rel="noopener noreferrer"
-          theme={{
-            text: 'text-gray-900 dark:text-gray-50',
-            states:
-              'focus-within:opacity-100 active:opacity-100  [@media(hover:hover)]:hover:opacity-100 [@media(hover:hover)]:dark:hover:opacity-100',
-          }}
-        >
-          UK Web Designers - Directory of Web Design Companies in the UK
-        </FooterLink>
-      </FooterSection> */}
 
       <FooterBottom>
-        <FooterText>© 2025 Third Bracket.</FooterText>
+        <FooterText>
+          © 2025 Verify Properties Limited.{" "}
+          <a
+            className="text-orange-500"
+            target="_blank"
+            href="https://www.thirdbracket.co.uk/contact"
+          >
+            Contact
+          </a>{" "}
+          for affordable websites in Manchester
+        </FooterText>
 
         <ThemeToggle />
       </FooterBottom>
